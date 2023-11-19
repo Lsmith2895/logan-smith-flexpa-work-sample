@@ -9,15 +9,13 @@ const port = 9000;
 app.use(cors());
 
 app.get('/access/:publicToken', async (request, response) => {
-    const publicToken = request.params.publicToken
-
     try {
-        console.log('trying to get access token')
-
+        //TODO: break this out into a single function
+        console.log('getting access token')
         const accessToken = await axios.post(
             'https://api.flexpa.com/link/exchange',
             {
-                public_token: publicToken,
+                public_token: request.params.publicToken,
                 secret_key: 'sk_test_blS7I4P1qIWMOFIDD703g3NKqW6rtdI9DN8PhQ9cVOE'
             },
             {
@@ -25,14 +23,28 @@ app.get('/access/:publicToken', async (request, response) => {
                     'Content-Type': 'application/json'
                 }
             })
-        console.log('access token data in the server', accessToken.data)
-        response.send(accessToken.data)
 
+        console.log('***** access token ***** ', accessToken.data.access_token)
+
+        //TODO: I dont like this chaining but due to time constraints leaving it
+        console.log(' ***** getting EOB *****')
+
+        const explanationOfBenefit = await axios.get('https://api.flexpa.com/fhir/ExplanationOfBenefit',
+            {
+                headers: {
+                    "content-type": "application/json",
+                    "authorization": `Bearer ${accessToken.data.access_token}`,
+                    "x-flexpa-raw": "0",
+                }
+            })
+
+        console.log('***** EOB *****', explanationOfBenefit.data)
+
+        response.send(explanationOfBenefit.data)
     } catch (error) {
-
-        console.log('getting access token failed')
+        // TODO: add dynatrace / loggly / or other logging here to let the team know of a failure
         console.error(error)
-        response.send(error.status)
+        response.status(error.statusCode).send('getting access token failed')
     }
 });
 

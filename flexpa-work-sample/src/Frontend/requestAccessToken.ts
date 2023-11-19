@@ -7,6 +7,7 @@ async function requestAccessToken(publicToken: string) {
 		return response
 	} catch (error) {
 		console.error(error)
+		// TODO: add dynatrace / loggly / or other logging here to let the team know of a failure
 		throw new Error()
 	}
 }
