@@ -13,9 +13,9 @@ function startFlexpaLink() {
     FlexpaLink.create({
         publishableKey: flexpaPublishableKey,
         onSuccess: (publicToken: string) => {
-          requestAccessToken(publicToken)
+           requestAccessToken(publicToken)
         },
-    });
+    }) 
 
 }
 

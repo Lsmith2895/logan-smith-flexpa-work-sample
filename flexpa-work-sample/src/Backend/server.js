@@ -2,6 +2,7 @@
 import express from 'express'
 import cors from 'cors'
 import axios from 'axios'
+import fs from 'file-system'
 
 const app = express();
 const port = 9000;
@@ -23,9 +24,8 @@ app.get('/access/:publicToken', async (request, response) => {
                     'Content-Type': 'application/json'
                 }
             })
-
-        console.log('***** access token ***** ', accessToken.data.access_token)
-
+            console.log('***** access token ***** ', accessToken.data.access_token)
+           
         //TODO: I dont like this chaining but due to time constraints leaving it
         console.log(' ***** getting EOB *****')
 
@@ -39,8 +39,10 @@ app.get('/access/:publicToken', async (request, response) => {
             })
 
         console.log('***** EOB *****', explanationOfBenefit.data)
+        fs.writeFile('mockDb.txt', JSON.stringify(explanationOfBenefit.data))
 
         response.send(explanationOfBenefit.data)
+
     } catch (error) {
         // TODO: add dynatrace / loggly / or other logging here to let the team know of a failure
         console.error(error)
