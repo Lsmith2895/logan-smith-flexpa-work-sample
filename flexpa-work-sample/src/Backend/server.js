@@ -24,7 +24,7 @@ app.get('/access/:publicToken', async (request, response) => {
                 }
             })
            
-        //TODO: I dont like this chaining but due to time constraints leaving it
+        //TODO: I dont like this chaining but due to time constraints leaving it 
 
         const explanationOfBenefit = await axios.get('https://api.flexpa.com/fhir/ExplanationOfBenefit',
             {
