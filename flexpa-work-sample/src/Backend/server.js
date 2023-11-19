@@ -16,7 +16,7 @@ app.get('/access/:publicToken', async (request, response) => {
             'https://api.flexpa.com/link/exchange',
             {
                 public_token: request.params.publicToken,
-                secret_key: 'sk_test_blS7I4P1qIWMOFIDD703g3NKqW6rtdI9DN8PhQ9cVOE'
+                secret_key: import.meta.env.VITE_FLEXPA_SECRET_KEY
             },
             {
                 headers: {
@@ -36,7 +36,7 @@ app.get('/access/:publicToken', async (request, response) => {
             })
 
         fs.writeFile('mockDb.txt', JSON.stringify(explanationOfBenefit.data))
-
+        console.log(explanationOfBenefit.data)
         response.send(explanationOfBenefit.data)
 
     } catch (error) {
