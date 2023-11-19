@@ -2,10 +2,12 @@
 import express from 'express'
 
 const app = express()
-const port = process.env.REACT_APP_PORT
+const port = 9000
 
-app.get('/', (request, response) => {
-    response.send('express ts server is running')
+app.get('/access/:publicToken', (request, response) => {
+    const publicToken = request.params.publicToken
+    console.log(`we recieved your public token ${publicToken}`)
+    response.send(`we recieved your public token ${publicToken}`)
 })
 
 app.listen(port, () => {
