@@ -1,7 +1,7 @@
+/* eslint-disable no-undef */
 import express from 'express'
 
 const app = express()
-// eslint-disable-next-line no-undef
 const port = process.env.REACT_APP_PORT
 
 app.get('/', (request, response) => {
