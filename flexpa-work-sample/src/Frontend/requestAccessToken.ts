@@ -4,7 +4,6 @@ async function requestAccessToken(publicToken: string) {
 	const getAccessTokenUrl = `http://localhost:9000/access/${publicToken}`
 	try {
 		const response = await axios.get(getAccessTokenUrl)
-		console.log('axios response', response)
 		return response
 	} catch (error) {
 		console.error(error)

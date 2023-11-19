@@ -12,7 +12,6 @@ app.use(cors());
 app.get('/access/:publicToken', async (request, response) => {
     try {
         //TODO: break this out into a single function
-        console.log('getting access token')
         const accessToken = await axios.post(
             'https://api.flexpa.com/link/exchange',
             {
@@ -24,10 +23,8 @@ app.get('/access/:publicToken', async (request, response) => {
                     'Content-Type': 'application/json'
                 }
             })
-            console.log('***** access token ***** ', accessToken.data.access_token)
            
         //TODO: I dont like this chaining but due to time constraints leaving it
-        console.log(' ***** getting EOB *****')
 
         const explanationOfBenefit = await axios.get('https://api.flexpa.com/fhir/ExplanationOfBenefit',
             {
@@ -38,7 +35,6 @@ app.get('/access/:publicToken', async (request, response) => {
                 }
             })
 
-        console.log('***** EOB *****', explanationOfBenefit.data)
         fs.writeFile('mockDb.txt', JSON.stringify(explanationOfBenefit.data))
 
         response.send(explanationOfBenefit.data)
