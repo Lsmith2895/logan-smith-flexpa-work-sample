@@ -1,7 +1,8 @@
 import express from 'express'
 
 const app = express()
-const port = 9000
+// eslint-disable-next-line no-undef
+const port = process.env.REACT_APP_PORT
 
 app.get('/', (request, response) => {
     response.send('express ts server is running')
