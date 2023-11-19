@@ -1,13 +1,13 @@
 import axios from 'axios'
 
-function requestAccessToken(publicToken: string) {
+async function requestAccessToken(publicToken: string) {
 	const getAccessTokenUrl = `http://localhost:9000/access/${publicToken}`
-
-	axios.get(getAccessTokenUrl)
-		.then((response) => {
-			console.log('it worked');
-			return response
-		})
-		.catch((error) => { throw new Error(error) })
+	try {
+		const response = await axios.get(getAccessTokenUrl)
+		return response
+	} catch (error) {
+		console.error(error)
+		throw new Error()
+	}
 }
 export { requestAccessToken }
