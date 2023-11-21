@@ -1,0 +1,12 @@
+{
+    "resourceType": "Bundle",
+    "id": "22f61d0877b54b2a8a2feb57bfe2c462",
+    "entry": [
+        {
+            "url": "www.example.com",
+            "resource": {
+                "resourceType": "ExplanationOfBenefit"
+            }
+        }
+    ]
+}
