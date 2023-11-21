@@ -1,4 +1,4 @@
-import { FlexpaConfig } from "../types/FlexpaConfig";
+import { FlexpaConfig } from "./types/FlexpaConfig";
 import { requestAccessToken } from "./requestAccessToken";
 
 declare const FlexpaLink: {
@@ -10,10 +10,12 @@ declare const FlexpaLink: {
 function startFlexpaLink() {
     const flexpaPublishableKey = import.meta.env.VITE_FLEXPA_PUBLISHABLE_KEY
 
-    FlexpaLink.create({
+    return FlexpaLink.create({
         publishableKey: flexpaPublishableKey,
-        onSuccess: (publicToken: string) => {
-           requestAccessToken(publicToken)
+        onSuccess: async (publicToken: string) => {
+           const response = await requestAccessToken(publicToken)
+           console.log('start flexpa response', response)
+           return response
         },
     }) 
 
