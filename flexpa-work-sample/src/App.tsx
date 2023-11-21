@@ -1,6 +1,7 @@
 import './App.css'
 import { startFlexpaLink } from './Frontend/startFlexpaLink';
 import { FlexpaConfig } from './types/FlexpaConfig';
+import React from 'react'
 
 declare const FlexpaLink: {
   create: (config: FlexpaConfig) => Record<string, unknown>;
