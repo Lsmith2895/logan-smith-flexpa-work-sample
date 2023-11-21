@@ -19,8 +19,6 @@ app.get('/access/:publicToken', async (request: Request, response: Response) => 
 			const accessTokenResponse = await exchangeLink(request.params.publicToken, flexpaSecretKey)
 			const explanationOfBenefit = await getExplanationOfBenefit(accessTokenResponse.access_token)
 			
-			console.log("EOB", explanationOfBenefit.data)
-
 			response.send(explanationOfBenefit.data);
 		}
 		
