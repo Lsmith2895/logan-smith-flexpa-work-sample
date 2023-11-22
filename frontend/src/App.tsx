@@ -16,12 +16,20 @@ declare const FlexpaLink: {
 function App() {
   const [showMockData, setShowMockData] = useState(false)
   const [explanationOfBenefitData, setExplanationOfBenefitData] = useState<any>(null);
-  console.log("*** EOB in app tsx ***", explanationOfBenefitData?.entry[0].url)
+  // console.log("*** EOB in app tsx ***", explanationOfBenefitData?.entry[0].url)
+  // console.log(mockData)
   return (
     <>
       <NavigationBar />
       <div className='flex flex-col justify-center px-8'>
         < Header />
+
+        {showMockData &&
+          <div className="flex flex-row flex-wrap">
+            <ExplanationOfBenefits mockData={mockData} />
+          </div>
+        }
+        
         <div className='flex flex-wrap mt-10 justify-evenly p-10 md:mt-0'>
           <button className='bg-lime-900 text-neutral-200 p-4 rounded-lg text-2xl font-semibold'
             onClick={() => {
@@ -47,14 +55,11 @@ function App() {
 
           <button className='bg-lime-900 text-neutral-200 p-4 rounded-lg text-2xl font-semibold' onClick={() => {
             setShowMockData(!showMockData)
-          }}> Show Me Mock EOB Data </button>
+          }}> Show Mock EOB Data </button>
         </div>
-        {showMockData && <ExplanationOfBenefits mockData={mockData} />}
-        {explanationOfBenefitData &&
-          <div
-            className="bg-red-700 h-20 font-bold text-white">
-            {explanationOfBenefitData}
-          </ div>}
+
+        
+
       </div>
     </>
   )
