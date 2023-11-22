@@ -1,24 +1,1115 @@
 {
-    "resourceType": "Bundle",
-    "type": "searchset",
-    "entry": [
+  "resourceType": "Bundle",
+  "type": "searchset",
+  "entry": [
       {
-        "fullUrl": "https://api.flexpa.com/fhir/ExplanationOfBenefit/5700123d-e608-5622-a9b7-9917ea70f25c",
-        "resource": "[Object]"
+          "fullUrl": "https://api.flexpa.com/fhir/ExplanationOfBenefit/50b0e38b-9570-5f61-870a-9fd7313291e5",
+          "resource": {
+              "resourceType": "ExplanationOfBenefit",
+              "id": "50b0e38b-9570-5f61-870a-9fd7313291e5",
+              "meta": {
+                  "versionId": "99957ddc-d273-4ecd-9e07-d604a93d6f6f",
+                  "lastUpdated": "2023-11-22T01:09:54.676Z",
+                  "source": "https://platform.smcpartners.com/healthfirst/fhirsandbox/ExplanationOfBenefit/6844",
+                  "profile": [
+                      "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Professional-NonClinician",
+                      "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Professional-NonClinician|1.1.0"
+                  ],
+                  "tag": [
+                      {
+                          "system": "https://smcpartners.com/fhir/metatags/contributor-entity",
+                          "code": "HealthFirst"
+                      },
+                      {
+                          "system": "https://smcpartners.com/fhir/metatags/dataset-name",
+                          "code": "Medical Claims"
+                      },
+                      {
+                          "system": "https://smcpartners.com/fhir/metatags/event-id",
+                          "code": "20211025_Professional1CUST119600002"
+                      },
+                      {
+                          "system": "https://fhir.flexpa.com/identifiers/PatientAccessTokenId",
+                          "code": "f37626e9-03f6-4b82-97fc-55296d82d2bd"
+                      },
+                      {
+                          "system": "https://fhir.flexpa.com/identifiers/EndpointId",
+                          "code": "cc84dfcd-2344-48e9-8707-cc3b8ec6ad74"
+                      },
+                      {
+                          "system": "https://fhir.flexpa.com/identifiers/ApplicationId",
+                          "code": "0528b7fb-0b4a-4d70-8ece-fd35c66dc5ed"
+                      },
+                      {
+                          "system": "https://fhir.flexpa.com/identifiers/PatientAccessTokenMode",
+                          "code": "TEST"
+                      }
+                  ]
+              },
+              "contained": [
+                  {
+                      "resourceType": "Organization",
+                      "id": "1",
+                      "meta": {
+                          "profile": [
+                              "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Organization",
+                              "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Organization|1.1.0"
+                          ]
+                      },
+                      "identifier": [
+                          {
+                              "system": "https://www.healthfirst.org/identifiers/claims/medical/payer-id",
+                              "value": "34"
+                          },
+                          {
+                              "type": {
+                                  "coding": [
+                                      {
+                                          "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                                          "code": "payerid",
+                                          "display": "Payer ID"
+                                      }
+                                  ]
+                              }
+                          }
+                      ],
+                      "name": "INTEGRATED PRODUCTS",
+                      "address": [
+                          {
+                              "line": [
+                                  "C/O HEALTHFIRST",
+                                  "100 ELPHINSTONE ST, 18TH FLR"
+                              ],
+                              "city": "NEW YORK",
+                              "state": "NY",
+                              "postalCode": "10007",
+                              "country": "USA"
+                          }
+                      ],
+                      "contact": [
+                          {
+                              "telecom": [
+                                  {
+                                      "system": "phone",
+                                      "value": "0000000000"
+                                  }
+                              ]
+                          }
+                      ]
+                  },
+                  {
+                      "resourceType": "Organization",
+                      "id": "2",
+                      "meta": {
+                          "profile": [
+                              "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Organization",
+                              "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Organization|1.1.0"
+                          ]
+                      },
+                      "identifier": [
+                          {
+                              "system": "https://www.healthfirst.org/identifiers/claims/medical/payer-id",
+                              "value": "421685996-006"
+                          },
+                          {
+                              "type": {
+                                  "coding": [
+                                      {
+                                          "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                                          "code": "npi",
+                                          "display": "National Provider Identifier"
+                                      }
+                                  ]
+                              },
+                              "system": "http://terminology.hl7.org/NamingSystem/npi",
+                              "value": "1962502229"
+                          },
+                          {
+                              "type": {
+                                  "coding": [
+                                      {
+                                          "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                                          "code": "TAX",
+                                          "display": "Tax ID number"
+                                      }
+                                  ]
+                              },
+                              "system": "http://terminology.hl7.org/NamingSystem/USEIN",
+                              "value": "421685996"
+                          }
+                      ],
+                      "name": "INTEGRA PARTNERS IPA LLC",
+                      "address": [
+                          {
+                              "line": [
+                                  "100 CHURCH ST",
+                                  "STE 2502"
+                              ],
+                              "city": "NEW YORK",
+                              "state": "NY",
+                              "postalCode": "10005",
+                              "country": "USA"
+                          }
+                      ],
+                      "contact": [
+                          {
+                              "name": {
+                                  "family": "INTEGRA PARTNERS IPA LLC",
+                                  "given": [
+                                      "DIXON"
+                                  ]
+                              },
+                              "telecom": [
+                                  {
+                                      "system": "phone",
+                                      "value": "101-202-3003"
+                                  }
+                              ]
+                          }
+                      ]
+                  },
+                  {
+                      "resourceType": "Organization",
+                      "id": "3",
+                      "meta": {
+                          "profile": [
+                              "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Organization",
+                              "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Organization|1.1.0"
+                          ]
+                      },
+                      "identifier": [
+                          {
+                              "system": "https://www.healthfirst.org/identifiers/claims/medical/payer-id",
+                              "value": "421685996-006"
+                          },
+                          {
+                              "type": {
+                                  "coding": [
+                                      {
+                                          "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                                          "code": "npi",
+                                          "display": "National Provider Identifier"
+                                      }
+                                  ]
+                              },
+                              "system": "http://terminology.hl7.org/NamingSystem/npi",
+                              "value": "1962502229"
+                          },
+                          {
+                              "type": {
+                                  "coding": [
+                                      {
+                                          "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                                          "code": "TAX",
+                                          "display": "Tax ID number"
+                                      }
+                                  ]
+                              },
+                              "system": "http://terminology.hl7.org/NamingSystem/USEIN",
+                              "value": "421685996"
+                          }
+                      ],
+                      "name": "INTEGRA PARTNERS IPA LLC",
+                      "address": [
+                          {
+                              "line": [
+                                  "100 CHURCH ST",
+                                  "STE 2502"
+                              ],
+                              "city": "NEW YORK",
+                              "state": "NY",
+                              "postalCode": "10005",
+                              "country": "USA"
+                          }
+                      ],
+                      "contact": [
+                          {
+                              "name": {
+                                  "family": "INTEGRA PARTNERS IPA LLC",
+                                  "given": [
+                                      "DIXON"
+                                  ]
+                              },
+                              "telecom": [
+                                  {
+                                      "system": "phone",
+                                      "value": "101-202-3003"
+                                  }
+                              ]
+                          }
+                      ]
+                  },
+                  {
+                      "resourceType": "Practitioner",
+                      "id": "4",
+                      "meta": {
+                          "profile": [
+                              "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Practitioner",
+                              "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Practitioner|1.1.0"
+                          ]
+                      },
+                      "identifier": [
+                          {
+                              "system": "https://www.healthfirst.org/identifiers/practitioner-hfprovidermasterid",
+                              "value": "421685996-006"
+                          },
+                          {
+                              "type": {
+                                  "coding": [
+                                      {
+                                          "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                                          "code": "npi",
+                                          "display": "National Provider Identifier"
+                                      }
+                                  ]
+                              },
+                              "system": "http://terminology.hl7.org/NamingSystem/npi",
+                              "value": "1962502229"
+                          },
+                          {
+                              "type": {
+                                  "coding": [
+                                      {
+                                          "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                                          "code": "TAX",
+                                          "display": "Tax ID number"
+                                      }
+                                  ]
+                              },
+                              "system": "http://terminology.hl7.org/NamingSystem/USEIN",
+                              "value": "421685996"
+                          }
+                      ],
+                      "name": [
+                          {
+                              "family": "INTEGRA PARTNERS LLC"
+                          }
+                      ],
+                      "telecom": [
+                          {
+                              "system": "phone",
+                              "value": "7183690012"
+                          }
+                      ],
+                      "address": [
+                          {
+                              "line": [
+                                  "100 CHURCH ST STE 2502"
+                              ],
+                              "city": "NEW YORK",
+                              "state": "NY",
+                              "postalCode": "10005"
+                          }
+                      ]
+                  }
+              ],
+              "identifier": [
+                  {
+                      "type": {
+                          "coding": [
+                              {
+                                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                                  "code": "uc",
+                                  "display": "Unique Claim ID"
+                              }
+                          ],
+                          "text": "Indicates that the claim identifier is that assigned by a payer for a claim received from a provider or subscriber."
+                      },
+                      "system": "https://www.healthfirst.org/identifiers/claims/medical/claim-id",
+                      "value": "117600000001"
+                  },
+                  {
+                      "value": "6844",
+                      "system": "https://platform.smcpartners.com/healthfirst/fhirsandbox/ExplanationOfBenefit/SourceResourceId"
+                  }
+              ],
+              "status": "active",
+              "type": {
+                  "coding": [
+                      {
+                          "system": "http://terminology.hl7.org/CodeSystem/claim-type",
+                          "code": "professional",
+                          "display": "Professional"
+                      }
+                  ],
+                  "text": "Hospital, clinic and typically outpatient claims."
+              },
+              "use": "claim",
+              "patient": {
+                  "reference": "Patient/84023e30-6138-5d7f-8299-9acd758b1989"
+              },
+              "billablePeriod": {
+                  "start": "2019-12-23T00:00:00+00:00",
+                  "end": "2019-12-23T00:00:00+00:00"
+              },
+              "created": "2019-12-26T00:00:00+00:00",
+              "insurer": {
+                  "reference": "#1"
+              },
+              "provider": {
+                  "reference": "#2"
+              },
+              "related": [
+                  {
+                      "relationship": {
+                          "coding": [
+                              {
+                                  "system": "http://terminology.hl7.org/CodeSystem/ex-relatedclaimrelationship",
+                                  "code": "prior",
+                                  "display": "Prior Claim"
+                              }
+                          ]
+                      },
+                      "reference": {
+                          "value": "0101162067751"
+                      }
+                  }
+              ],
+              "payee": {
+                  "type": {
+                      "coding": [
+                          {
+                              "system": "http://terminology.hl7.org/CodeSystem/payeetype",
+                              "code": "provider",
+                              "display": "Provider"
+                          }
+                      ]
+                  },
+                  "party": {
+                      "reference": "#3"
+                  }
+              },
+              "outcome": "complete",
+              "careTeam": [
+                  {
+                      "sequence": 1,
+                      "provider": {
+                          "reference": "#4"
+                      },
+                      "role": {
+                          "coding": [
+                              {
+                                  "system": "http://terminology.hl7.org/CodeSystem/claimcareteamrole",
+                                  "code": "primary",
+                                  "display": "Primary provider"
+                              }
+                          ]
+                      }
+                  }
+              ],
+              "supportingInfo": [
+                  {
+                      "sequence": 1,
+                      "category": {
+                          "coding": [
+                              {
+                                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType",
+                                  "code": "billingnetworkcontractingstatus",
+                                  "display": "Billing Network Contracting Status"
+                              }
+                          ],
+                          "text": "Indicates that the Billing Provider has a contract with the Payer as of the effective date of service or admission."
+                      },
+                      "code": {
+                          "coding": [
+                              {
+                                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus",
+                                  "code": "contracted",
+                                  "display": "Contracted"
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "sequence": 2,
+                      "category": {
+                          "coding": [
+                              {
+                                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType",
+                                  "code": "performingnetworkcontractingstatus",
+                                  "display": "Performing Network Contracting Status"
+                              }
+                          ],
+                          "text": "Indicates that the Performing Provider has a contract with the Payer as of the effective date of service or admission."
+                      },
+                      "code": {
+                          "coding": [
+                              {
+                                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus",
+                                  "code": "contracted",
+                                  "display": "Contracted"
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "sequence": 3,
+                      "category": {
+                          "coding": [
+                              {
+                                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType",
+                                  "code": "clmrecvddate",
+                                  "display": "Claim Received Date"
+                              }
+                          ],
+                          "text": "Date the claim was received by the payer."
+                      },
+                      "timingDate": "2019-12-25"
+                  }
+              ],
+              "diagnosis": [
+                  {
+                      "sequence": 1,
+                      "diagnosisCodeableConcept": {
+                          "coding": [
+                              {
+                                  "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                                  "code": "E11.9",
+                                  "display": "TYPE 2 DIABETES MELLITUS WITHOUT COMPLICATIONS"
+                              }
+                          ]
+                      },
+                      "type": [
+                          {
+                              "coding": [
+                                  {
+                                      "system": "http://terminology.hl7.org/CodeSystem/ex-diagnosistype",
+                                      "code": "principal",
+                                      "display": "Principal Diagnosis"
+                                  }
+                              ]
+                          }
+                      ]
+                  }
+              ],
+              "procedure": [
+                  {
+                      "sequence": 1,
+                      "date": "2019-12-23T00:00:00+00:00",
+                      "procedureCodeableConcept": {
+                          "coding": [
+                              {
+                                  "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+                                  "code": "8E0ZXY6",
+                                  "display": "ISOLATION"
+                              }
+                          ],
+                          "text": "ISOLATION"
+                      }
+                  },
+                  {
+                      "sequence": 2,
+                      "date": "2019-12-23T00:00:00+00:00",
+                      "procedureCodeableConcept": {
+                          "coding": [
+                              {
+                                  "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+                                  "code": "5A1945Z",
+                                  "display": "Respiratory Ventilation, 24-96 Consecutive Hours"
+                              }
+                          ],
+                          "text": "Respiratory Ventilation, 24-96 Consecutive Hours"
+                      }
+                  }
+              ],
+              "insurance": [
+                  {
+                      "focal": true,
+                      "coverage": {
+                          "reference": "Coverage/3028e575-1151-56fe-b714-9494064527db",
+                          "identifier": {
+                              "system": "http://www.healthfirst.org/identifiers/coveragedate",
+                              "value": "2016-02-01"
+                          }
+                      }
+                  },
+                  {
+                      "focal": true,
+                      "coverage": {
+                          "reference": "Coverage/1d274263-e4b9-5575-8ffe-bb76a56c8ed1",
+                          "identifier": {
+                              "system": "http://www.healthfirst.org/identifiers/coveragedate",
+                              "value": "2019-12-03"
+                          }
+                      }
+                  }
+              ],
+              "item": [
+                  {
+                      "id": "1",
+                      "sequence": 1,
+                      "revenue": {
+                          "coding": [
+                              {
+                                  "system": "https://www.nubc.org/CodeSystem/RevenueCodes",
+                                  "code": "171",
+                                  "display": "NURSERY/LEVELITEST1"
+                              }
+                          ],
+                          "text": "NURSERY/LEVELITEST1"
+                      },
+                      "productOrService": {
+                          "coding": [
+                              {
+                                  "system": "http://www.ama-assn.org/go/cpt",
+                                  "code": "A5500",
+                                  "display": "FOR DIABETICS ONLY, FITTING (INCLUDING FOLLOW-UP),CUSTOM PREPARATION AND SUPPLY OF OFF-TH E-SHELF DEPTH-INLAY SHOE MANUFACTURED TO ACCOMMODATE MULTI- DENSITY INSERT(S), PER SHOE"
+                              }
+                          ],
+                          "text": "FOR DIABETICS ONLY, FITTING (INCLUDING FOLLOW-UP),CUSTOM PREPARATION AND SUPPLY OF OFF-TH E-SHELF DEPTH-INLAY SHOE MANUFACTURED TO ACCOMMODATE MULTI- DENSITY INSERT(S), PER SHOE"
+                      },
+                      "modifier": [
+                          {
+                              "coding": [
+                                  {
+                                      "system": "http://www.ama-assn.org/go/cpt",
+                                      "code": "LT",
+                                      "display": "LEFT SIDE (SITE DISCRIPTOR)"
+                                  }
+                              ]
+                          },
+                          {
+                              "coding": [
+                                  {
+                                      "system": "http://www.ama-assn.org/go/cpt",
+                                      "code": "KX",
+                                      "display": "SPECIFIC REQUIRED DOCUMENTATION ON FILE"
+                                  }
+                              ]
+                          }
+                      ],
+                      "servicedPeriod": {
+                          "start": "2019-12-23T00:00:00+00:00",
+                          "end": "2019-12-23T00:00:00+00:00"
+                      },
+                      "locationCodeableConcept": {
+                          "coding": [
+                              {
+                                  "system": "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set",
+                                  "code": "21",
+                                  "display": "INPATIENT HOSPITAL"
+                              }
+                          ]
+                      },
+                      "quantity": {
+                          "value": 0
+                      },
+                      "adjudication": [
+                          {
+                              "category": {
+                                  "coding": [
+                                      {
+                                          "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                                          "code": "submitted",
+                                          "display": "Submitted Amount"
+                                      }
+                                  ],
+                                  "text": "The total submitted amount for the claim or group or line item."
+                              },
+                              "amount": {
+                                  "value": 6000
+                              }
+                          },
+                          {
+                              "category": {
+                                  "coding": [
+                                      {
+                                          "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                                          "code": "copay",
+                                          "display": "CoPay"
+                                      }
+                                  ],
+                                  "text": "Patient Co-Payment."
+                              },
+                              "amount": {
+                                  "value": 0
+                              }
+                          },
+                          {
+                              "category": {
+                                  "coding": [
+                                      {
+                                          "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                                          "code": "eligible",
+                                          "display": "Eligible Amount"
+                                      }
+                                  ],
+                                  "text": "Amount of the change which is considered for adjudication."
+                              },
+                              "amount": {
+                                  "value": 0
+                              }
+                          },
+                          {
+                              "category": {
+                                  "coding": [
+                                      {
+                                          "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                                          "code": "deductible",
+                                          "display": "Deductible"
+                                      }
+                                  ],
+                                  "text": "Amount deducted from the eligible amount prior to adjudication."
+                              },
+                              "amount": {
+                                  "value": 0
+                              }
+                          },
+                          {
+                              "category": {
+                                  "coding": [
+                                      {
+                                          "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                                          "code": "benefit",
+                                          "display": "Benefit Amount"
+                                      }
+                                  ],
+                                  "text": "Amount payable under the coverage."
+                              },
+                              "amount": {
+                                  "value": 0
+                              }
+                          },
+                          {
+                              "category": {
+                                  "coding": [
+                                      {
+                                          "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication",
+                                          "code": "coinsurance",
+                                          "display": "Coinsurance"
+                                      }
+                                  ],
+                                  "text": "The amount the insured individual pays, as a set percentage of the cost of covered medical services, as an out-of-pocket payment to the provider. Example: Insured pays 20% and the insurer pays 80%."
+                              },
+                              "amount": {
+                                  "value": 0
+                              }
+                          },
+                          {
+                              "category": {
+                                  "coding": [
+                                      {
+                                          "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication",
+                                          "code": "noncovered",
+                                          "display": "Noncovered"
+                                      }
+                                  ],
+                                  "text": "The portion of the cost of this service that was deemed not eligible by the insurer because the service or member was not covered by the subscriber contract."
+                              },
+                              "amount": {
+                                  "value": 0
+                              }
+                          },
+                          {
+                              "category": {
+                                  "coding": [
+                                      {
+                                          "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication",
+                                          "code": "paidtoprovider",
+                                          "display": "Paid to provider"
+                                      }
+                                  ],
+                                  "text": "The amount paid to the provider."
+                              },
+                              "amount": {
+                                  "value": 0
+                              }
+                          },
+                          {
+                              "category": {
+                                  "coding": [
+                                      {
+                                          "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication",
+                                          "code": "discount",
+                                          "display": "Discount"
+                                      }
+                                  ],
+                                  "text": "The amount of the discount."
+                              },
+                              "amount": {
+                                  "value": 0
+                              }
+                          },
+                          {
+                              "category": {
+                                  "coding": [
+                                      {
+                                          "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
+                                          "code": "allowedunits",
+                                          "display": "allowed units"
+                                      }
+                                  ],
+                                  "text": "Defines the adjudication slice to define allowed units."
+                              },
+                              "value": 1
+                          }
+                      ]
+                  },
+                  {
+                      "id": "2",
+                      "sequence": 2,
+                      "revenue": {
+                          "coding": [
+                              {
+                                  "system": "https://www.nubc.org/CodeSystem/RevenueCodes",
+                                  "code": "300",
+                                  "display": "GEN-CLASS - LABORATORY OR LABTEST1"
+                              }
+                          ],
+                          "text": "GEN-CLASS - LABORATORY OR LABTEST1"
+                      },
+                      "productOrService": {
+                          "coding": [
+                              {
+                                  "system": "http://www.ama-assn.org/go/cpt",
+                                  "code": "99284",
+                                  "display": "EMERGENCY DEPARTMENT VISIT FOR THE EVALUATION ANDMANAGEMENT OF A PATIENT, WHICH REQUIRES THESE 3 KEY COMPONENTS: A DETAILED HISTORY; A DETAILED EXAMINATION; AND MEDICAL DECISION MAKING OF MODERATE CMPLEXITTEST1"
+                              }
+                          ],
+                          "text": "EMERGENCY DEPARTMENT VISIT FOR THE EVALUATION ANDMANAGEMENT OF A PATIENT, WHICH REQUIRES THESE 3 KEY COMPONENTS: A DETAILED HISTORY; A DETAILED EXAMINATION; AND MEDICAL DECISION MAKING OF MODERATE CMPLEXITTEST1"
+                      },
+                      "modifier": [
+                          {
+                              "coding": [
+                                  {
+                                      "system": "http://www.ama-assn.org/go/cpt",
+                                      "code": "25",
+                                      "display": "ADD'L E/M SVC REQ-SAME MD"
+                                  }
+                              ]
+                          },
+                          {
+                              "coding": [
+                                  {
+                                      "system": "http://www.ama-assn.org/go/cpt",
+                                      "code": "59",
+                                      "display": "DISTINCT PROCEDURAL SERVICE"
+                                  }
+                              ]
+                          }
+                      ],
+                      "servicedPeriod": {
+                          "start": "2019-12-23T00:00:00+00:00",
+                          "end": "2019-12-23T00:00:00+00:00"
+                      },
+                      "locationCodeableConcept": {
+                          "coding": [
+                              {
+                                  "system": "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set",
+                                  "code": "21",
+                                  "display": "INPATIENT HOSPITAL"
+                              }
+                          ]
+                      },
+                      "quantity": {
+                          "value": 0
+                      },
+                      "adjudication": [
+                          {
+                              "category": {
+                                  "coding": [
+                                      {
+                                          "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                                          "code": "submitted",
+                                          "display": "Submitted Amount"
+                                      }
+                                  ],
+                                  "text": "The total submitted amount for the claim or group or line item."
+                              },
+                              "amount": {
+                                  "value": 59
+                              }
+                          },
+                          {
+                              "category": {
+                                  "coding": [
+                                      {
+                                          "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                                          "code": "copay",
+                                          "display": "CoPay"
+                                      }
+                                  ],
+                                  "text": "Patient Co-Payment."
+                              },
+                              "amount": {
+                                  "value": 0
+                              }
+                          },
+                          {
+                              "category": {
+                                  "coding": [
+                                      {
+                                          "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                                          "code": "eligible",
+                                          "display": "Eligible Amount"
+                                      }
+                                  ],
+                                  "text": "Amount of the change which is considered for adjudication."
+                              },
+                              "amount": {
+                                  "value": 0
+                              }
+                          },
+                          {
+                              "category": {
+                                  "coding": [
+                                      {
+                                          "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                                          "code": "deductible",
+                                          "display": "Deductible"
+                                      }
+                                  ],
+                                  "text": "Amount deducted from the eligible amount prior to adjudication."
+                              },
+                              "amount": {
+                                  "value": 0
+                              }
+                          },
+                          {
+                              "category": {
+                                  "coding": [
+                                      {
+                                          "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                                          "code": "benefit",
+                                          "display": "Benefit Amount"
+                                      }
+                                  ],
+                                  "text": "Amount payable under the coverage."
+                              },
+                              "amount": {
+                                  "value": 0
+                              }
+                          },
+                          {
+                              "category": {
+                                  "coding": [
+                                      {
+                                          "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication",
+                                          "code": "coinsurance",
+                                          "display": "Coinsurance"
+                                      }
+                                  ],
+                                  "text": "The amount the insured individual pays, as a set percentage of the cost of covered medical services, as an out-of-pocket payment to the provider. Example: Insured pays 20% and the insurer pays 80%."
+                              },
+                              "amount": {
+                                  "value": 0
+                              }
+                          },
+                          {
+                              "category": {
+                                  "coding": [
+                                      {
+                                          "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication",
+                                          "code": "noncovered",
+                                          "display": "Noncovered"
+                                      }
+                                  ],
+                                  "text": "The portion of the cost of this service that was deemed not eligible by the insurer because the service or member was not covered by the subscriber contract."
+                              },
+                              "amount": {
+                                  "value": 0
+                              }
+                          },
+                          {
+                              "category": {
+                                  "coding": [
+                                      {
+                                          "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication",
+                                          "code": "paidtoprovider",
+                                          "display": "Paid to provider"
+                                      }
+                                  ],
+                                  "text": "The amount paid to the provider."
+                              },
+                              "amount": {
+                                  "value": 0
+                              }
+                          },
+                          {
+                              "category": {
+                                  "coding": [
+                                      {
+                                          "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication",
+                                          "code": "discount",
+                                          "display": "Discount"
+                                      }
+                                  ],
+                                  "text": "The amount of the discount."
+                              },
+                              "amount": {
+                                  "value": 0
+                              }
+                          },
+                          {
+                              "category": {
+                                  "coding": [
+                                      {
+                                          "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
+                                          "code": "allowedunits",
+                                          "display": "allowed units"
+                                      }
+                                  ],
+                                  "text": "Defines the adjudication slice to define allowed units."
+                              },
+                              "value": 1
+                          }
+                      ]
+                  }
+              ],
+              "total": [
+                  {
+                      "category": {
+                          "coding": [
+                              {
+                                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                                  "code": "submitted",
+                                  "display": "Submitted Amount"
+                              }
+                          ],
+                          "text": "The total submitted amount for the claim or group or line item."
+                      },
+                      "amount": {
+                          "value": 2554.25,
+                          "currency": "USD"
+                      }
+                  },
+                  {
+                      "category": {
+                          "coding": [
+                              {
+                                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                                  "code": "copay",
+                                  "display": "CoPay"
+                              }
+                          ],
+                          "text": "Patient Co-Payment."
+                      },
+                      "amount": {
+                          "value": 0,
+                          "currency": "USD"
+                      }
+                  },
+                  {
+                      "category": {
+                          "coding": [
+                              {
+                                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                                  "code": "eligible",
+                                  "display": "Eligible Amount"
+                              }
+                          ],
+                          "text": "Amount of the change which is considered for adjudication."
+                      },
+                      "amount": {
+                          "value": 2554.25,
+                          "currency": "USD"
+                      }
+                  },
+                  {
+                      "category": {
+                          "coding": [
+                              {
+                                  "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                                  "code": "deductible",
+                                  "display": "Deductible"
+                              }
+                          ],
+                          "text": "Amount deducted from the eligible amount prior to adjudication."
+                      },
+                      "amount": {
+                          "value": 0,
+                          "currency": "USD"
+                      }
+                  },
+                  {
+                      "category": {
+                          "coding": [
+                              {
+                                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication",
+                                  "code": "coinsurance",
+                                  "display": "Coinsurance"
+                              }
+                          ],
+                          "text": "The amount the insured individual pays, as a set percentage of the cost of covered medical services, as an out-of-pocket payment to the provider. Example: Insured pays 20% and the insurer pays 80%."
+                      },
+                      "amount": {
+                          "value": 0,
+                          "currency": "USD"
+                      }
+                  },
+                  {
+                      "category": {
+                          "coding": [
+                              {
+                                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication",
+                                  "code": "noncovered",
+                                  "display": "Noncovered"
+                              }
+                          ],
+                          "text": "The portion of the cost of this service that was deemed not eligible by the insurer because the service or member was not covered by the subscriber contract."
+                      },
+                      "amount": {
+                          "value": 0,
+                          "currency": "USD"
+                      }
+                  },
+                  {
+                      "category": {
+                          "coding": [
+                              {
+                                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication",
+                                  "code": "discount",
+                                  "display": "Discount"
+                              }
+                          ],
+                          "text": "The amount of the discount."
+                      },
+                      "amount": {
+                          "value": 0,
+                          "currency": "USD"
+                      }
+                  },
+                  {
+                      "category": {
+                          "coding": [
+                              {
+                                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication",
+                                  "code": "paidtoprovider",
+                                  "display": "Paid to provider"
+                              }
+                          ],
+                          "text": "The amount paid to the provider."
+                      },
+                      "amount": {
+                          "value": 2554.25,
+                          "currency": "USD"
+                      }
+                  }
+              ],
+              "payment": {
+                  "type": {
+                      "coding": [
+                          {
+                              "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus",
+                              "code": "paid",
+                              "display": "Paid"
+                          }
+                      ],
+                      "text": "Indicates if the claim was approved for payment."
+                  },
+                  "date": "2019-12-25"
+              }
+          }
+      }
+  ],
+  "link": [
+      {
+          "relation": "self",
+          "url": "https://api.flexpa.com/fhir/ExplanationOfBenefit?_count=20&_tag=https%3A%2F%2Ffhir.flexpa.com%2Fidentifiers%2FPatientAccessTokenId%7Cf37626e9-03f6-4b82-97fc-55296d82d2bd"
       },
       {
-        "fullUrl": "https://api.flexpa.com/fhir/ExplanationOfBenefit/f02c691d-e929-58c6-9263-08dbcf84ca1c",
-        "resource": "[Object]"
+          "relation": "first",
+          "url": "https://api.flexpa.com/fhir/ExplanationOfBenefit?_count=20&_offset=0&_tag=https%3A%2F%2Ffhir.flexpa.com%2Fidentifiers%2FPatientAccessTokenId%7Cf37626e9-03f6-4b82-97fc-55296d82d2bd"
       }
-    ],
-    "link": [
-      {
-        "relation": "self",
-        "url": "https://api.flexpa.com/fhir/ExplanationOfBenefit?_count=20&_tag=https%3A%2F%2Ffhir.flexpa.com%2Fidentifiers%2FPatientAccessTokenId%7Cd8337d48-7925-4d80-b692-452382f7023a"
-      },
-      {
-        "relation": "first",
-        "url": "https://api.flexpa.com/fhir/ExplanationOfBenefit?_count=20&_offset=0&_tag=https%3A%2F%2Ffhir.flexpa.com%2Fidentifiers%2FPatientAccessTokenId%7Cd8337d48-7925-4d80-b692-452382f7023a"
-      }
-    ]
-  }
+  ]
+}
