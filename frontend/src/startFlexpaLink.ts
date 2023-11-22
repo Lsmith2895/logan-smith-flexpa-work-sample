@@ -14,7 +14,6 @@ function startFlexpaLink() {
         publishableKey: flexpaPublishableKey,
         onSuccess: async (publicToken: string) => {
            const response = await requestAccessToken(publicToken)
-           console.log('start flexpa response', response)
            return response
         },
     }) 
