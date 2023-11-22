@@ -18,7 +18,7 @@ function App() {
   return (
     <>
     <NavigationBar />
-     <div className='flex flex-col'>
+     <div className='flex flex-col justify-center px-8'>
       < Header />
       <div className='flex flex-wrap mt-10 justify-evenly p-10 md:mt-0'>
         <button className='bg-lime-900 text-neutral-200 p-4 rounded-lg text-2xl font-semibold'
