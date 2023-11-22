@@ -1,0 +1,24 @@
+{
+    "resourceType": "Bundle",
+    "type": "searchset",
+    "entry": [
+      {
+        "fullUrl": "https://api.flexpa.com/fhir/ExplanationOfBenefit/5700123d-e608-5622-a9b7-9917ea70f25c",
+        "resource": "[Object]"
+      },
+      {
+        "fullUrl": "https://api.flexpa.com/fhir/ExplanationOfBenefit/f02c691d-e929-58c6-9263-08dbcf84ca1c",
+        "resource": "[Object]"
+      }
+    ],
+    "link": [
+      {
+        "relation": "self",
+        "url": "https://api.flexpa.com/fhir/ExplanationOfBenefit?_count=20&_tag=https%3A%2F%2Ffhir.flexpa.com%2Fidentifiers%2FPatientAccessTokenId%7Cd8337d48-7925-4d80-b692-452382f7023a"
+      },
+      {
+        "relation": "first",
+        "url": "https://api.flexpa.com/fhir/ExplanationOfBenefit?_count=20&_offset=0&_tag=https%3A%2F%2Ffhir.flexpa.com%2Fidentifiers%2FPatientAccessTokenId%7Cd8337d48-7925-4d80-b692-452382f7023a"
+      }
+    ]
+  }
