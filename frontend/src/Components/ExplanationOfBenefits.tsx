@@ -4,12 +4,7 @@
 import { ReactElement } from "react"
 import { Address } from "../types/ExplanationOfBenefits"
 
-// interface explanationOfBenefitsProps {
-//     mockData: ExplanationOfBenefitBundle
-// }
-
 function ExplanationOfBenefits(mockData: any): ReactElement {
-    // console.log(mockData.mockData.entry[0].resource.contained[0])
     const firstEntry = mockData.mockData.entry[0].resource
     return firstEntry.contained.map((contained: any) => {
         let contact = ''

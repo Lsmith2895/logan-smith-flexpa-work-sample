@@ -16,8 +16,6 @@ declare const FlexpaLink: {
 function App() {
   const [showMockData, setShowMockData] = useState(false)
   const [explanationOfBenefitData, setExplanationOfBenefitData] = useState<any>({});
-  // console.log("*** EOB in app tsx ***", explanationOfBenefitData?.entry[0].url)
-  // console.log(mockData)
   return (
     <>
       <NavigationBar />
@@ -39,7 +37,7 @@ function App() {
                 publishableKey: flexpaPublishableKey,
                 onSuccess: async (publicToken: string) => {
                   const response = await requestAccessToken(publicToken)
-                  console.log('start flexpa response', response)
+                  console.log('flexpa response', response)
                   if (response) {
                     setExplanationOfBenefitData(response)
                   }
